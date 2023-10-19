@@ -33,7 +33,7 @@ function Footer() {
           <h4>Contact Us</h4>
           <div className='d-flex'>
             <input type="text" className='form-control' placeholder='Enter Email ID' />
-            <button className='btn btn-primary'>Subscribe</button>
+            <button className='btn btn-primary ms-2 rounded' style={{width:'120px'}}>Subscribe</button>
           </div>
           <div className=' mt-3 d-flex justify-content-evenly' style={{width: '200px'}}>
           <Link to={""}  style={{textDecoration:"none", color:'black', fontSize:'20px'}}><i class="fa-brands fa-facebook-f"></i></Link>
