@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { removeFromCart } from '../redux/slice/cartSlice'
+import { emptyCart, removeFromCart } from '../redux/slice/cartSlice'
 
 function Cart() {
   const CartArray =useSelector((state)=>state.cartReducer)
@@ -13,6 +13,10 @@ function Cart() {
     }else{
       setTotal(0)
     }
+  }
+  const handleCart = ()=>{
+    dispatch(emptyCart())
+    alert("Order Successfully Placed...ThankYou for purchasing with us!!!")
   }
   useEffect(()=>{
     getCartTotal()
@@ -54,7 +58,7 @@ function Cart() {
                 <h4 className='mt-3'>Total Products : <span>{CartArray.length}</span></h4>
                 <h4>Total : <span className='text-danger fw-bolder fs-2'>$ {total} </span> </h4>
             <div className="d-grid">
-              <button className='btn btn-success mt-5 rounded'>Check Out</button>
+              <button onClick={handleCart} className='btn btn-success mt-5 rounded'>Check Out</button>
             </div>
             </div>
           </div>
