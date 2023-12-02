@@ -9,12 +9,14 @@ function Header() {
   return (
     <Navbar style={{zIndex:'1'}} expand="lg" className="bg-body-tertiary position-fixed top=0 w-100 mb-5">
       <Container>
-        <Navbar.Brand><Link to={'/'} style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}><i class="fa-solid fa-truck-fast me-2"></i> E-Cart</Link></Navbar.Brand>
+        <Navbar.Brand><Link to={'/'} style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}><span style={{fontSize:'25px',fontWeight:'bolder'}}>T</span>eeRex</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+        <input type="text" className='form-control w-25 rounded ms-auto' placeholder='Search...' />
+
           <Nav className="ms-auto">
             <Nav.Link className='btn border rounded btn-warning'>
-              <Link to={'/wishlist'} style={{ textDecoration: 'none', color: 'black' }}><i class="me-2 fa-solid fa-heart text-danger"></i>
+              <Link to={'/wishlist'} style={{ textDecoration: 'none', color: 'black'}}><i class="me-2 fa-solid fa-heart text-danger"></i>
                 Whishlist
               </Link>
               <Badge className='ms-2 rounded' bg="dark">{wishlist.length}</Badge>

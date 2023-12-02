@@ -43,8 +43,8 @@ function Wishlist() {
 
     <div style={{height:'60vh'}} className='w-100 d-flex flex-column justify-content-center align-items-center'>
       <img height={'250px'} src="https://media2.giphy.com/media/fscIxPfKjPyShbwUS5/giphy.gif?cid=6c09b9521b4b7adc2ede5194a30481a1994f52968b0d1f9d&rid=giphy.gif&ct=s" alt="" />
-      <h4 className='fw-bolder text-dark'>Your Wishlist Is Empty!!!</h4>
-      <Link style={{textDecoration:'none'}} className='btn btn-warning rounded mt-3' to={'/'}>Back To Home</Link>
+      <h4 className='fw-bolder text-danger'>Your Wishlist Is Empty!!!</h4>
+      <Link style={{textDecoration:'none'}} className='btn btn-primary rounded mt-3' to={'/'}>Back To Home</Link>
     </div>
   }
 </Row>

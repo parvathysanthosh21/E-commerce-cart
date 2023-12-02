@@ -11,10 +11,10 @@ function Footer() {
             className='fs-5'
             style={{textDecoration:"none", color:'black'}}>
            <i class="fa-solid fa-truck-fast"></i>  
-             E-CART
+           TeeRex
             </Link>
-         <h6 className='mt-2'>Designed and built with all the love in the world by the E-Cart team with the help of our contributors.</h6>
-         <h6>Code licensed E-Cart team, docs CC BY 3.0.</h6>
+         <h6 className='mt-2'>Designed and built with all the love in the world by the TeeRex team with the help of our contributors.</h6>
+         <h6>Code licensed TeeRex team, docs CC BY 3.0.</h6>
          <p>Currently v1.0.0.</p>
          </div>
          <div className="link d-flex flex-column">
@@ -45,7 +45,7 @@ function Footer() {
          </div>
        </div>
        <div className='d-flex justify-content-center align-items-center'>
-        <p>Copyright © 2023 E-cart. Built with React.</p>
+        <p>Copyright © 2023 TeeRex. Built with React.</p>
         </div>
     </div>
   )

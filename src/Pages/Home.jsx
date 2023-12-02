@@ -18,8 +18,9 @@ const dispatch = useDispatch()
       <Card.Body>
         <Card.Title>{product?.title}</Card.Title>
         <Card.Text>
-          <p>{product?.description.slice(0,55)}...</p>
-          <h5 className='fw-bolder'>$ {product?.price}</h5>
+          <p>{product?.description.slice(0,25)}...</p>
+          <h6 className='fw-bolder'>$ {product?.price}</h6>
+         <h6> <i class="fa-solid fa-star text-warning"></i>  {product?.rating}</h6>
         </Card.Text>
        <div className='d-flex justify-content-between'>
           <Button onClick={()=>dispatch(addToWishList(product))} className='btn btn-light'>
